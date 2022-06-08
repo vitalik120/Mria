@@ -1,0 +1,317 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  font-family: 'Raleway', sans-serif;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.introduce img {
+  width: 600px;
+}
+
+.introduce {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: inset 5em 2em gold;
+          box-shadow: inset 5em 2em gold;
+  margin-bottom: 30px;
+}
+
+.introduce-text {
+  padding: 10px;
+}
+
+.introduce-text h1 {
+  margin-bottom: 5px;
+}
+
+.introduce-text p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.line {
+  width: 1200px;
+  height: 1px;
+  background-color: grey;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.history-block01, .history-block02 {
+  gap: 10px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.history-block01 .history-text, .history-block02 .history-text {
+  width: 700px;
+}
+
+.history-block01 img, .history-block02 img {
+  width: 500px;
+  height: 300px;
+}
+
+.history-block01 p, .history-block02 p {
+  line-height: 25px;
+}
+
+a {
+  width: 200px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  background-color: gold;
+  padding-top: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  margin-top: 20px;
+}
+
+a:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #d6a505;
+}
+
+.constructor {
+  line-height: 25px;
+}
+
+.constructor h2 {
+  border-bottom: 5px solid red;
+  padding-bottom: 5px;
+}
+
+.constructor-content {
+  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.constructor-content img {
+  width: 450px;
+  height: 300px;
+}
+
+.main-foto {
+  width: 1200px;
+  margin-top: 20px;
+}
+
+.main-foto img {
+  width: 100%;
+}
+
+.text {
+  text-align: left;
+}
+
+table {
+  margin-top: 20px;
+  border: 1px solid grey;
+}
+
+table td {
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+table tr {
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.intresting-facts {
+  line-height: 25px;
+  margin-top: 30px;
+}
+
+.intresting-facts h2 {
+  text-align: center;
+  font-size: 27px;
+}
+
+.intresting-facts .facts-examples {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (570px)[2];
+      grid-template-columns: repeat(2, 570px);
+  margin-top: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+
+.intresting-facts .facts-examples .fact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 250px 1fr;
+      grid-template-columns: 250px 1fr;
+  font-size: 16px;
+  gap: 10px;
+}
+
+.intresting-facts .facts-examples .fact .fc {
+  border-radius: 100%;
+  width: 250px;
+  height: 200px;
+}
+
+.video-dream {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+  .container .introduce {
+    width: 1024px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .container .introduce .introduce-text {
+    overflow: hidden;
+    max-height: 0;
+    font-size: 0;
+  }
+  .container .introduce img {
+    width: 1024px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .container line {
+    width: 1024px;
+  }
+  .container .history .history-content .history-block01 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .history .history-content .history-block01 img {
+    width: 1024px;
+    min-height: 0;
+  }
+  .container .history .history-content .history-block01 .history-text {
+    min-width: 100%;
+  }
+  .container .history .history-content .history-block02 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container .history .history-content .history-block02 img {
+    width: 1024px;
+    min-height: 600px;
+  }
+  .container .history .history-content .history-block02 .history-text {
+    width: 1024px;
+  }
+  .container .history a {
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    font-size: 0;
+  }
+  .container .constructor {
+    margin-bottom: 10px;
+  }
+  .container .constructor h2 {
+    max-height: 0;
+    font-size: 0;
+    border: none;
+  }
+  .container .constructor .constructor-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .constructor .constructor-content img {
+    width: 1024px;
+    min-height: 700px;
+  }
+  .container .constructor .constructor-content .constructor-text {
+    width: 1024px;
+  }
+  .container .facts-examples {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .facts-examples .fact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .facts-examples .fact img {
+    border-radius: 0%;
+  }
+  .container .facts-examples .fact .fc {
+    border-radius: 0%;
+    min-width: 1024px;
+    min-height: 750px;
+  }
+  .container .dream {
+    width: 1024px;
+  }
+  .container .main-table {
+    width: 1024px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
